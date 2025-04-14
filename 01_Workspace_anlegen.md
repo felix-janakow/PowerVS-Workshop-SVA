@@ -103,3 +103,6 @@
 > Beispiel: ``ssh-keygen -t rsa -b 4096 -C "test-key"``
 >
 > Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Schlüsseln](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)
+
+<br/>
+<img src="_images/ssh-key-create.png" width="700">

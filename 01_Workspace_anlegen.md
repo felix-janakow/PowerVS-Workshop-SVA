@@ -61,7 +61,7 @@
 > [!TIP]
 > Falls Sie von irgendeinem Punkt in der IBM Cloud aus wieder schnell zu ihrem Workspace navigieren möchten, wählen sie über die Seitenleiste -> ``Resource list`` und suchen Sie unter **Compute** Ihren Workspace
 >
-> ![Navigation_Ressourcelist](https://github.ibm.com/felix-janakow/PowerVS-Workshop/blob/main/_images/nav_resource-list.png)
+> ![Navigation_Ressourcelist](https://github.com/felix-janakow/PowerVS-Workshop-SVA/blob/main/_images/nav_resource-list.png)
 
 <br/>
 

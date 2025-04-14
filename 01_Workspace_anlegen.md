@@ -35,8 +35,6 @@
 > [!NOTE]
 > Beim reinen anlegen eines Workspaces entstehen keine Kosten
 
-<br/>
-
 - nachdem der Workspace erstellt ist sollte dieser jetzt in der Ansicht **Workspaces** sichtbar sein
 - klicken Sie auf Ihren erstellten Workspace um mit den nächsten Schritten fortfahren zu können
 
@@ -55,8 +53,6 @@
 <br/>
 <img src="_images/navbar_subnets.png" width="230">
 
-<br/>
-
 - gehen Sie auf der rechten Seite auf das Feld `Create Subnet +`
 - bennen Sie ihr Subnet
 - vergeben Sie Ihre für diese Übung vorgegebne Subnet-Adresse 
@@ -71,8 +67,6 @@
 
 <br/>
 <img src="_images/ssh-keys_navbar.png" width="230">
-
-<br/>
 
 - gehen Sie auf der rechten Seite auf das Feld ``Create SSH-Key``
 - vergeben Sie einen Namen für den Key und fügen Sie den öffentlichen Schlüssel ihres SSH-Keys im unteren Feld ein und drücken Sie auf ``Add SSH key``

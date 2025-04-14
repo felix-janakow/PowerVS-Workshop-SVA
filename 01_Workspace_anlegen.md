@@ -4,7 +4,7 @@
 
 - Melden Sie sich mit ihren Login-Daten in ihrem IBM Cloud Account an 
 
-- Suchen Sie im oberen Navigationsbalken nach ``Katalog`` 
+- Suchen Sie im oberen Navigationsbalken nach ``Catalog`` 
 
 - Suchen Sie im Suchfeld des Katalogs nach **PowerVS**
 
@@ -17,46 +17,51 @@
 ----
 ### Schritt 2 - PowerVS Workspace erstellen:
 
-- klicken Sie auf das Feld ``Arbeitsbereich erstellen``
+- klicken Sie auf das Feld ``Create a Workspace``
 
-- wählen Sie als **Standorttyp** - **IBM data center** 
+- wählen Sie als **Location type** - **IBM data center** 
 
-- wählen Sie als **Position** - **eu-de-1** oder **eu-de-2** (-> Datacenter in Frankfurt, es kann natürlich theoretisch jedes verfügbare Datacenter gewählt werden)
+- wählen Sie als **Location** - **eu-de-1** oder **eu-de-2** (-> Datacenter in Frankfurt, es kann natürlich theoretisch jedes verfügbare Datacenter gewählt werden)
 
 > [!NOTE]
 > Eine Auflistung der Standorte an denen Power Virtual Server zur Verfügung stehen finden Sie hier: [Power Virtual Server Regions](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-ibm-cloud-reg)
 
-- gehen Sie anschließend auf ``Weiter``
+- gehen Sie anschließend auf ``Continue``
 
 - wählen Sie einen Namen für den Workspace
 
-- als Ressourcengruppe wählen Sie die Ihnen zugeordente Ressourcengruppe 
+- als **Resource group** wählen Sie die Ihnen zugeordente Ressourcengruppe 
 
-- **Benutzertag** und **Zugriffsmanagementtags** können im Moment ignoeriert werden
+- **User tags** und **Access management tags** können im Moment ignoeriert werden
 
-- gehen Sie anschließend auf ``Weiter``
+- gehen Sie anschließend auf ``Continue``
 
 - der Punkt Monitoring ist optional  (zur optimalen Fehlerbehebung und der Reduzierung von Ausfallzeiten empfohlen) 
 
-- gehen Sie anschließend auf ``Fertigstellen``
+- gehen Sie anschließend auf ``Finish``
 
-- setzen Sie den Haken bei ***Ich akzeptiere die Bedingungen*** und wählen Sie zum Schluss ``Erstellen``
+- setzen Sie den Haken bei ***I agree to the Terms and Conditions*** und wählen Sie zum Schluss ``Create``
 
 <br/>
 <img src="_images/create_pvs_workspace.png" width="850">
 
 <br/>
 
-- nachdem der Workspace erstellt ist sollte dieser jetzt in der Ansicht **Arbeitsbereiche** sichtbar sein
+> [!NOTE]
+> Beim reinen anlegen eines Workspaces entstehen keine Kosten
 
-- klicken Sie auf Ihren erstellten Arbeitsbereich um mit den nächsten Schritten fortfahren zu können
+<br/>
+
+- nachdem der Workspace erstellt ist sollte dieser jetzt in der Ansicht **Workspaces** sichtbar sein
+
+- klicken Sie auf Ihren erstellten Workspace um mit den nächsten Schritten fortfahren zu können
 
 <br/>
 
 > [!TIP]
-> Falls Sie von irgendeinem Punkt in der IBM Cloud aus wieder schnell zu ihrem Workspace navigieren möchten, wählen sie über die Seitenleiste -> ``Ressourcenliste`` und suchen Sie unter **Datenverarbeitungsfunktionalität** Ihren Workspace
+> Falls Sie von irgendeinem Punkt in der IBM Cloud aus wieder schnell zu ihrem Workspace navigieren möchten, wählen sie über die Seitenleiste -> ``Resource list`` und suchen Sie unter **Compute** Ihren Workspace
 >
-> ![Navigation_Ressourcelist](https://github.ibm.com/felix-janakow/PowerVS-Workshop/blob/main/_images/nav_resourcelist.png)
+> ![Navigation_Ressourcelist](https://github.ibm.com/felix-janakow/PowerVS-Workshop/blob/main/_images/nav_resource-list.png)
 <br/>
 
 ----
@@ -64,45 +69,45 @@
 
 #### Subnetz erstellen
 
-- um ein Subnetz zu erstellen navigieren Sie innerhalb ihres Workspaces unter **Netzbetrieb** auf **Teilnetze**
+- um ein Subnetz zu erstellen navigieren Sie innerhalb ihres Workspaces unter **networking** auf **Subnets**
 
 <br/>
-<img src="_images/navbar_teilnetze.png" width="230">
+<img src="_images/navbar_subnets.png" width="230">
 
 <br/>
 
-- gehen Sie auf der rechten Seite auf das Feld `Teilnetz erstellen+`
+- gehen Sie auf der rechten Seite auf das Feld `Create Subnet +`
 
-- bennen Sie ihr Teilnetz
+- bennen Sie ihr Subnet
 
-- vergeben Sie Ihre für diese Übung vorgegebne Subnetz-Adresse 
+- vergeben Sie Ihre für diese Übung vorgegebne Subnet-Adresse 
 
 - lassen Sie die restlichen Werte standardmäßg und klicken sie auf ``Teilnetz erstellen``
 
 <br/>
-<img src="_images/create_subnet.png" width="255">
+<img src="_images/subnet_create.png" width="270">
 
 <br/>
 
 #### SHH-Key erstellen
 
-- um einen SSH-Key zu erstellen navigieren Sie innerhalb ihres Workspaces unter **Rechenressourcen** auf **SSH-Schlüssel**
+- um einen SSH-Key zu erstellen navigieren Sie innerhalb ihres Workspaces unter **Compute** auf **SSH-keys**
 
 <br/>
-<img src="_images/navbar_ssh-keys.png" width="230">
+<img src="_images/ssh-keys_navbar.png" width="230">
 
 <br/>
 
-- gehen sie auf der rechten Seite auf das Feld ``SSH-Schlüssel erstellen``
+- gehen Sie auf der rechten Seite auf das Feld ``Create SSH-Key``
 
-- vergeben sie einen Namen für den Key und fügen sie den öffentlichen Schlüssel ihres SSH-Keys im unteren Feld ein
+- vergeben Sie einen Namen für den Key und fügen Sie den öffentlichen Schlüssel ihres SSH-Keys im unteren Feld ein und drücken Sie auf ``Add SSH key``
 
 > [!NOTE]
 > Der SSH-Key sollte im vorhinein mit z.b. ``ssh-keygen`` (für Linux und MacOs) erstellt werden
 >
 > Beispiel: ``ssh-keygen -t rsa -b 4096 -C "test-key"``
 >
-> Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Schlüsseln](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)
+> Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Keys](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)
 
 <br/>
-<img src="_images/ssh-key-create.png" width="700">
+<img src="_images/ssh-key_create.png" width="650">

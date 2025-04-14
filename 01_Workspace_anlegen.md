@@ -92,4 +92,14 @@
 <img src="_images/navbar_ssh-keys.png" width="230">
 
 <br/>
-.
+
+- gehen sie auf der rechten Seite auf das Feld ``SSH-Schlüssel erstellen``
+
+- vergeben sie einen Namen für den Key und fügen sie den öffentlichen Schlüssel ihres SSH-Keys im unteren Feld ein
+
+> [!NOTE]
+> Der SSH-Key sollte im vorhinein mit z.b. ``ssh-keygen`` (für Linux und MacOs) erstellt werden
+>
+> Beispiel: ``ssh-keygen -t rsa -b 4096 -C "test-key"``
+>
+> Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Schlüsseln](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)

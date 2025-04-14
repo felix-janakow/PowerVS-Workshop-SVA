@@ -21,7 +21,7 @@
     - **Next**
 <img src="_images/Import-Image-1.png" width="250"/>
 
-- Name des Images eingeben (muss unique sein; erscheint som im Image-Katalog)
+- Name des Images eingeben (muss unique sein; erscheint so im Image-Katalog)
 - Storage Tier auswählen, mit dem das Image per default deployed werden soll
 - Storage Pool/Afinity/Anti-Affinity auswählen
 - **Next**

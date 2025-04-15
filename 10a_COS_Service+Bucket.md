@@ -15,9 +15,10 @@
 <img src="_images/COS_Service1.png" width="500"/>
 
 - Der Service wird angezeigt, ein Bucket kann ertellt werden:
-<img src="_images/COS_Create_bucket1.png" width="500"/>
+<img src="_images/COS_Service2.png" width="500"/>
 
 - Create bucket auswählen:
+<img src="_images/COS_Create_bucket1.png" width="500"/>
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
 

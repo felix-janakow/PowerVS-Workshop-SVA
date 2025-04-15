@@ -115,3 +115,13 @@
 
 <img src="_images/LPAR_provisioning.png" width="750">
 <img src="_images/LPAR_price.png" width="250">
+
+
+- das provisionieren der Insanz kann jetzt einige Minuten in Anspruch nehmen
+- um auf der Instanzu zu arbeiten müssen Sie sich nach erfolgreicher Provisonierung zuerst mit dem in der VPC liegendem JumpServer per SSH verbinden ``ssh -i <publickey> root@<IP_Jump_Server>``
+    - geben Sie dem JumpServer optional ihren Power VS SSH-Key per ssh-agent mit um diesen nicht auf dem JumpServer ablegen zu müssen
+    - aktivieren Sie dazu zuerst den ssh-agent ``eval $(ssh-agent -s)``
+    - geben Sie dem Agent den privaten SSH_Key für den Zugriff auf die PowerVS Instanz mit ``ssh-add <private_key_PowerVS>``
+    - gehen Sie über ssh auf den Jump Server mit der Angabe von **-A** ``ssh -A -i <publickey> root@<IP_Jump_Server>``
+- Da die VPC und die PowerVS Instanz per **Transit Gateway verbunden werden** kann über den Jumpserver nun auf die PowerVS Instanz per SSH zugegriffen werden
+    - ``ssh root@<IP_PowerVS_Instanz>``

@@ -18,5 +18,5 @@
 
 - Create bucket auswählen 
 - 
-<img src="_images/Import-Image-4.png" width="500"/>
+<img src="_images/COS_Create_bucket1.png" width="500"/>
 

@@ -1,6 +1,6 @@
 # 10_Image_Import
 
-## Pre Reqs und Ranbedingungen:
+## Pre Reqs und Randbedingungen:
 - Image muss Cloud ready sein (cloud init), z.B. PowerVC oder PowerVS Export
 - Unterstützte Dateiformate: tar und ova
 - Unterstützte File-Extensions: .ova, .ova.gz, .tar, .tar.gz, .tgz and .ova.tgz

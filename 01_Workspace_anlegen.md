@@ -48,7 +48,7 @@
 
 #### Subnetz erstellen
 
-- um ein Subnetz zu erstellen navigieren Sie innerhalb ihres Workspaces unter **Networking** auf **Subnets**
+- um ein Subnet zu erstellen navigieren Sie innerhalb ihres Workspaces unter **Networking** auf **Subnets**
 
 <br/>
 <img src="_images/navbar_subnets.png" width="230">

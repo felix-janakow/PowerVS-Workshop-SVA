@@ -14,15 +14,16 @@
 - Standard Pricing Plan wählen, nach unten scrollen und ggfs. den Service Name und Resource Group ändern. Rechts Create klicken.
 <img src="_images/COS_Service1.png" width="500"/>
 
-- Der Service wird angezeigt, ein Bucket kann ertellt werden:
+- Der Service wird angezeigt, ein Bucket kann ertellt werden. Klick Create bucket:
 <img src="_images/COS_Service2.png" width="500"/>
 
-- Create bucket auswählen:
+- Gewünschte Bucket Ressource auswählen und Create klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket):
 <img src="_images/COS_Create_bucket1.png" width="500"/>
+- Ggfs. Name des Buckets ändern, Next
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
 
-- Gewünschte Bucket Ressource auswählen und Create klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket).
+
 
 <img src="_images/COS_Create_bucket3.png" width="500"/>
 

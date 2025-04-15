@@ -3,10 +3,10 @@
 ## Vorgehen
 1. COS Service Instanz erstellen
 2. Im COS Service einen COS Bucket erstellen
-3. Zusätzliche Service Credentials mit "Include HMAC Credential" erstellen
-4. Service Credentials anzeigen und kopieren für den Image Transfer
-5. OS Image Datei / andere Dateien in Bucket hochladen für Image Transfer in Power Virtual Server Workspace
-
+3. OS Image Datei / andere Dateien in Bucket hochladen
+4. Zusätzliche Service Credentials mit "Include HMAC Credential" erstellen
+5. Service Credentials, Bucket Name, usw anzeigen und kopieren für den Image Transfer
+   
 ## Erstellen COS Service Instanz und COS Bucket
 
 - Im IBM Cloud Catalog nach „Object Storage“ suchen und diesen Service auswählen:
@@ -28,6 +28,8 @@ Wenn die Dateien später hochgeladen werden, auf Next klicken, die Bucket Config
 
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
+- Wurden keine Dateien während der COS Bucket Erstellung hochgeladen, so können diese jederzeit durch einen Klick auf den Bucket Namen und dann Upload hochgeladen werden.
+
 ## Erstellen und Anzeigen/Kopieren der Service Credentials
 
 In der COS Service Instanz auf das Tab Service Credentials wechseln. Die bei der Erstellung des COS Buckets angelegten Service Credentials werden angezeigt. Diese beinhalten allerdings keine HMAC Keys, welche aber für den Image Transfer erforderlich sind. Eine Änderung der bestehenden Credentials ist nicht möglich, daher werden zusätzliche Credentials angelegt:
@@ -35,6 +37,7 @@ In der COS Service Instanz auf das Tab Service Credentials wechseln. Die bei der
 <img src="_images/Service_Instanzen.png" width="500"/>
 
 - Klick New Credentials
+- 
 - Name eingeben, Rolle (z.B. Manager) auswählen, Include HMAC Credential auf ON stellen, Add klicken:
 
 <img src="_images/HMAC.png" width="500"/>
@@ -47,11 +50,11 @@ Für den Image Transfer werden folgende Informationen benötigt: Region, Image f
 
 ## Weitere Daten für Image Transfer anzeigen
  
-Die Region und den Bucket name findet man in der COS Service Instance:
+- Die Region und den Bucket name findet man in der COS Service Instance:
 
 <img src="_images/COS_Service_Daten.png" width="500"/>
 
-Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf Bucket Name: 
+- Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf Bucket Name: 
 
 <img src="_images/COS_Imagefilename.png" width="500"/>
 

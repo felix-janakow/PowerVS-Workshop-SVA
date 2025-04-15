@@ -1,4 +1,4 @@
-# 10a_COS Service und Bucket erstellen 
+# 10a_COS Service und Bucket erstellen
 
 ## Vorgehen
 - COS Service erstellen

@@ -28,32 +28,30 @@ Wenn die Dateien später hochgeladen werden, auf Next klicken, die Bucket Config
 
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
-## Erstellen Service Credentials
+## Erstellen und Anzeigen/Kopieren der Service Credentials
 
 In der COS Service Instanz auf das Tab Service Credentials wechseln. Die bei der Erstellung des COS Buckets angelegten Service Credentials werden angezeigt. Diese beinhalten allerdings keine HMAC Keys, welche aber für den Image Transfer erforderlich sind. Eine Änderung der bestehenden Credentials ist nicht möglich, daher werden zusätzliche Credentials angelegt:
+
+<img src="_images/Service_Instanzen.png" width="500"/>
 
 - Klick New Credentials
 - Name eingeben, Rolle (z.B. Manager) auswählen, Include HMAC Credential auf ON stellen, Add klicken:
 
 <img src="_images/HMAC.png" width="500"/>
 
+Für den Image Transfer werden folgende Informationen benötigt: Region, Image filename, Bucket name, HMAC access key, HMAC secret access key.
+
 - Anzeigen und Kopieren der Service Credentials: Erweitern des "Twisties" neben dem Service Credential Namen, Copy and Paste der Zugriffsdaten, insbesondere der HMAC access und secret access keys:
 
 <img src="_images/HMAC_Anzeige.png" width="500"/>
 
 ## Weitere Daten für Image Transfer anzeigen
-
-Für den Image Transfer werden folgende Informationen benötigt: Region, Image filename, Bucket name, HMAC access key, HMAC secret access key. 
-Die Region und den Bucket name findet man in der Service Instance:
+ 
+Die Region und den Bucket name findet man in der COS Service Instance:
 
 <img src="_images/COS_Service_Daten.png" width="500"/>
 
 Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf Bucket Name: 
 
 <img src="_images/COS_Imagefilename.png" width="500"/>
-
-Unter Service Credentials finden sich die Zugriffsdaten (HMAC keys), die für den Image Transfer benötigt werden:
-
-<img src="_images/COS_Bucket_Config.png" width="500"/>
-<img src="_images/COS_Bucket_Config.png" width="500"/>
 

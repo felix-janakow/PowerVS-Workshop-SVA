@@ -37,7 +37,7 @@ In der COS Service Instanz auf das Tab Service Credentials wechseln. Die bei der
 <img src="_images/Service_Instanzen.png" width="500"/>
 
 - Klick New Credentials
-- 
+  
 - Name eingeben, Rolle (z.B. Manager) auswählen, Include HMAC Credential auf ON stellen, Add klicken:
 
 <img src="_images/HMAC.png" width="500"/>

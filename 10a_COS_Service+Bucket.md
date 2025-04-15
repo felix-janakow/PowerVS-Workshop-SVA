@@ -7,6 +7,7 @@
 - Image Datei hochladen
 - Service Credentials anzeigen und kopieren für den Image Transfer
 
+
 - Im IBM Cloud Catalog nach „Object Storage“ suchen und diesen Service auswählen:
 
 <img src="_images/COS_Dashboard.png" width="250"/>

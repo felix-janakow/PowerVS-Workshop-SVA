@@ -19,12 +19,17 @@
 <img src="_images/COS_Service2.png" width="500"/>
 
 - Gewünschte Bucket Art auswählen und Create klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket):
+- 
 <img src="_images/COS_Create_bucket1.png" width="500"/>
-- Ggfs. Name des Buckets ändern, Next klicken, wenn gewünscht, können im nächsten Schritt gleich Dateien hochgeladen werden. Ansonsten auf Next klicken und die Bucket Configuration anschauen. 
+
+- Ggfs. Name des Buckets ändern, Next klicken, wenn gewünscht, können im nächsten Schritt gleich Dateien hochgeladen werden. 
+Ansonsten auf Next klicken und die Bucket Configuration anschauen. 
+
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
 <img src="_images/COS_Create_bucket3.png" width="500"/>
 
 In der Bucket Konfiguration finden sich z.B. die Zugriffspfade, diese kopieren, da sie für den Image Transfer benötigt werden:
 
-<img src="_images/COS_Create_bucket1.png" width="500"/>
+<img src="_images/COS_Bucket_Config.png" width="500"/>
+<img src="_images/COS_Bucket_Config.png" width="500"/>

@@ -15,16 +15,13 @@
 <img src="_images/COS_Service1.png" width="500"/>
 
 - Der Service wird angezeigt, ein Bucket kann ertellt werden:
-- Create bucket auswählen 
-- 
 <img src="_images/COS_Create_bucket1.png" width="500"/>
 
-
-
+- Create bucket auswählen:
 <img src="_images/COS_Create_bucket2.png" width="500"/>
 
 
-
+- Gewünschte Bucket Ressource auswählen und Create klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket).
 
 <img src="_images/COS_Create_bucket3.png" width="500"/>
 

@@ -3,6 +3,7 @@
 In diesem Workshop werden grundlegende und fortgeschrittenere Techniken zur Verwaltung von Power Virtual Servern Hands-On vermittelt. Der Workshop wendet sich an IT-Architekten, Administratoren und technische Fachkräfte, die ihre Fähigkeiten im Umgang mit Power Virtual Servern erweitern möchten.
 
 Das nachstehende Diagramm zeigt den Aufbau der Hands-On Umgebung, die verwendet wird und teilweise durch die beschriebenen Übungen aufgebaut wird.
+
 <img src="_images/SVA-PVS-Workshop_AoD.png" width="500"/>
 
 ## Vorbereitung der Hands-On Umgebung:

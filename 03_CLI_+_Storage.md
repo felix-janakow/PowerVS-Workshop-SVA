@@ -29,4 +29,4 @@
 > Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
 
 >[!NOTE]
-> Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI][https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli]
+> Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli)

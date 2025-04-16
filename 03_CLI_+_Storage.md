@@ -18,7 +18,7 @@
 
 >[!TIP]
 > Um immer die neuste Version der CLI zu nutzen führen Sie den Befehl ``ibmcloud update`` aus
-
+>
 > Die aktuelle Version Ihrer CLI finden Sie über ``ibmcloud -v`` heraus
 
 - Da wir mit PowerVS arbeiten möchten brauchen wir für unsere CLI noch ein Plugin
@@ -26,9 +26,9 @@
 
 >[!NOTE]
 > Eine Liste aller Plugins finden Sie über ``ibmcloud plugin repo-plugins``
-
+>
 > Um Ihre bereits installieren Plugins aufzulisten nutzen Sie ``ibmcloud plugin list``
-
+>
 > Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
 
 >[!NOTE]

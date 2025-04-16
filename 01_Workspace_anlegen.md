@@ -102,10 +102,10 @@
 - wählen Sie für Storage pool ``Auto-select``
 - lassen Sie die restlichen Felder auf den Standardeinstellungen und gehen Sie weiter mit ``Continue``
 - wählen Sie eine Power Maschine aus, welche Sie provisionieren möchten (für die Workshop Zwecke reicht z.b. eine s922)
-- für **Core type** bleiben wir mit der Einstellung **Shared uncapped**
-- für **Cores** wählen wir 0,25
+- für **Core type** bleiben wir bei der Einstellung **Shared uncapped**
+- für **Cores** wählen wir 0,5
 - für **Virtual Cores** bleiben wir mit der Standardeinstellung 1
-- für **Memory (GiB)** wählen wir 2GB
+- für **Memory (GiB)** wählen wir 4GB
 - gehen Sie weiter mit ``Continue``
 - **Storage volumes** lassen wir erst mal aus, diese werden in einem weiteren Teil des Workshops nochmal behandelt
 - gehen Sie weiter mit ``Continue``
@@ -113,8 +113,8 @@
 - wählen Sie ihr zuvor erstelltes Subnet aus, lassen Sie die restlichen Einstellungen wie sie sind und drücken Sie ``Attach``
 - wählen Sie zum Schluss ``Finish``, reviewen Sie den angezeigten Preis, setzen Sie den Haken bei ***I agree to the Terms and conditions*** und wählen Sie ``Create``
 
-<img src="_images/LPAR_provisioning.png" width="750">
-<img src="_images/LPAR_price.png" width="250">
+<img src="_images/LPAR_provisioning_.png" width="700">
+<img src="_images/LPAR_price_.png" width="250">
 
 
 - das provisionieren der Insanz kann jetzt einige Minuten in Anspruch nehmen

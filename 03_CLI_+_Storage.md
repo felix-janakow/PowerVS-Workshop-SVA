@@ -15,3 +15,18 @@
         - Sie sollten nun lokal über die CLI in ihrem Account sein  
 
 <img src="_images/CLI_login.png" width="700">
+
+>[!TIP]
+> Um immer die neuste Version der CLI zu nutzen führen Sie den Befehl ``ibmcloud update`` aus
+> Die aktuelle Version Ihrer CLI finden Sie über ``ibmcloud -v`` heraus
+
+- Da wir mit PowerVS arbeiten möchten brauchen wir für unsere CLI noch ein Plugin
+- Das Power-IaaS Plugin installieren wir über den Befehl ``ibmcloud plugin install power-iaas```
+
+>[!NOTE]
+> Eine Liste aller Plugins finden Sie über ``ibmcloud plugin repo-plugins``
+> Um Ihre bereits installieren Plugins aufzulisten nutzen Sie ``ibmcloud plugin list``
+> Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
+
+>[!NOTE]
+> Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: (!IBM Cloud-CLI)[https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli]

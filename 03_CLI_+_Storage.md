@@ -54,7 +54,7 @@
 ### Arbeiten mir PowerVS in der IBM Cloud per CLI
 
 >[!NOTE]
-> Sollten Sie in dem Teil des Workshops mit den verschiedenen Befehlen und ID`s durcheinadner kommen nutzen Sie das Dokument CLI_commands_simple_breakdown.md in dem Workshop Repo
+> Sollten Sie in dem Teil des Workshops mit den verschiedenen Befehlen und ID`s durcheinadner kommen nutzen Sie das Dokument CLI_commands_cheat_sheet.md in dem Workshop Repo
 
 ### Basics
 

@@ -1,5 +1,5 @@
 # 03_CLI_+_Storage
-### IBM Cloud CLI lokal nutzen
+### IBM Cloud-CLI lokal nutzen
 
 - Um die IBM Cloud CLI lokal zu nutzen öffnen Sie ihr Terminal und führen Sie das folgendee Skirpt je nach Betriebssystem aus: 
 
@@ -35,7 +35,7 @@
 > Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli)
 
 ---
-### IBM Cloud CLI im GUI
+### IBM Cloud-CLI im GUI
 
 - Es ist natürlich auch möglich die IBM Cloud CLI im IBM Cloud Portal zu nutzen, wählen sie dafür oben in der Navigationsbar das Icon aus welches wie ein Terminal aussieht und starten Sie per Klick eine neue Cloud Shell
 
@@ -46,3 +46,14 @@
 
 >[!NOTE]
 > Um sich mit allgemeinen Befehlen der IBM Cloud-CLI bekannt zu machen schauen sie in die offizielle Dokumentation über diesen Link: [IBM Cloud-CLI (ibmcloud) Befehle ](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_cli) 
+
+---
+
+### Arbeiten mir PowerVS in der IBM Cloud per CLI
+
+#### Hilfe bekommen
+
+#### Instanz Snapshot aufnehmen
+
+
+#### Instanz Volume clonen

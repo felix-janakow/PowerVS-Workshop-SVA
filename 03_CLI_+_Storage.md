@@ -87,7 +87,7 @@
 
 - Um den Snapshot zu suchen und die ID des Snapshots herauszufinden nutzen Sie den Befehl ``ibmcloud snap ls``
 
-<img src="_images/ibmcloud_pi_snap_ls.png" width="850">
+<img src="_images/ibmcloud_snap_ls.png" width="850">
 
 - Um den Snapshot für eine Wiederherstellung zu nutzen müssen Sie die LPAR zuerst herunterfahren.
     - Gehen Sie zum herunterfahren über **Ihren Workspace** unter **Compute** auf **Virtual Server Instances**, wählen Sie Ihre Instanz aus und klicken Sie ganz rechts oben, auf der höhe des Namens, auf das Icon mit den 3 Punkten, klicken Sie dann auf ``OS Shutdown``

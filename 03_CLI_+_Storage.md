@@ -72,7 +72,7 @@
 - Greifen Sie auf weitere Informationen der Instanz zu mit dem Befehl ``ibmcloud pi ins get <ID>``
 - Neben **Datenträger** sollten Sie jetzt 2 ID`s sehen wenn Sie in **Teil 02 - Volume hinzufügen** ein weiter Volume an die LPAR gehängt haben
 
-<img src="_images/ibmcloud_pi_ins_get.png" width="700">
+<img src="_images/ibmcloud_pi_ins_get.png" width="850">
 
 > [!TIP]
 > Um rauszufinden welche ID zu einem bestimmten Volume gehört, navigieren Sie über **Storage volumes** auf Ihr Volume, hier sollten Sie die ID sehen

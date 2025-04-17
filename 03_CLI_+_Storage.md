@@ -10,26 +10,23 @@
         ``[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12``
 
 - Nach erfolgreicher Installation könenn Sie sich mit dem Befehl``ibmcloud login`` an Ihrem Account anmelden
-    -  Sollten Sie beim versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren Einmalkenncode im IBM Cloud Portal.
+    -  Sollten Sie beim Versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren Einmalkenncode im IBM Cloud Portal.
        - Den Einmalkenncode zur Anmeldung in der CLI finden Sie, indem Sie oben in der Navigationsleiste ganz rechts auf das Profil-Icon klicken und anschließend auf ``Log in to CLI and API`` gehen. Kopieren Sie nun den Login-Befehl für die IBM Cloud CLI und fügen Sie ihn in Ihr Terminal ein. 
        - Sie sollten nun lokal über die CLI in Ihrem Account angemeldet sein.
 
 <img src="_images/CLI_login.png" width="700">
 
 >[!TIP]
-> Um immer die neuste Version der CLI zu nutzen führen Sie den Befehl ``ibmcloud update`` aus
->
-> Die aktuelle Version Ihrer CLI finden Sie über ``ibmcloud -v`` heraus
+> - Um immer die neuste Version der CLI zu nutzen führen Sie den Befehl ``ibmcloud update`` aus
+>-  Die aktuelle Version Ihrer CLI finden Sie über ``ibmcloud -v`` heraus
 
 - Da wir mit PowerVS arbeiten möchten brauchen wir für unsere CLI noch ein Plugin
 - Das Power-IaaS Plugin installieren wir über den Befehl ``ibmcloud plugin install power-iaas``
 
 >[!NOTE]
-> Eine Liste aller Plugins finden Sie über ``ibmcloud plugin repo-plugins``
->
-> Um Ihre bereits installieren Plugins aufzulisten nutzen Sie ``ibmcloud plugin list``
->
-> Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
+> - Eine Auflistung aller Plugins finden Sie über ``ibmcloud plugin repo-plugins``
+> - Um Ihre bereits installieren Plugins aufzulisten nutzen Sie ``ibmcloud plugin list``
+> - Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
 
 >[!NOTE]
 > Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli)
@@ -37,26 +34,34 @@
 ---
 ### IBM Cloud-CLI im GUI
 
-- Es ist natürlich auch möglich die IBM Cloud CLI im IBM Cloud Portal zu nutzen, wählen sie dafür oben in der Navigationsbar das Icon aus welches wie ein Terminal aussieht und starten Sie per Klick eine neue Cloud Shell
+- Es ist natürlich auch möglich die IBM Cloud CLI im IBM Cloud Portal zu nutzen, wählen Sie dafür oben in der Navigationsbar das Icon aus, welches wie ein Terminal aussieht und starten Sie per Klick eine neue Cloud Shell
 
 <img src="_images/Cloud-Shell.png" width="700">
 
-- Sie können jetzt direkt mit der IBM Cloud CLI interagieren, tippen Sie beispielweise ``ibmcloud help`` ein um Hilfe zu bekommen 
-- Testen Sie den Befehl ``ibmcloud plugin list``, sie sehen dass in der Cloud Shell bereits alle Plugins installiert sind
+- Sie können jetzt direkt mit der IBM Cloud CLI interagieren, tippen Sie beispielsweise ``ibmcloud help`` ein um Hilfe zu bekommen 
+- Testen Sie den Befehl ``ibmcloud plugin list``, Sie sehen dass in der Cloud Shell bereits alle Plugins installiert sind
+
+>[!TIP]
+> In der Cloud Shell müssen Sie nicht für jeden Befehl zuerst ``ibmcloud`` eintippen, es reicht wenn Sie die Befehle nur mit ``ic``eingeben
+> - Sie könnten sich um mit ``ic``auch lokal arbeiten zu können ein "Alias" in ihre Shell Konfigurationsdatei (z.b ~/.zshrc für MacOS) setzen
+
 
 >[!NOTE]
-> Um sich mit allgemeinen Befehlen der IBM Cloud-CLI bekannt zu machen schauen sie in die offizielle Dokumentation über diesen Link: [IBM Cloud-CLI (ibmcloud) Befehle ](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_cli) 
+> Um sich mit allgemeinen Befehlen der IBM Cloud-CLI bekannt zu machen werfen Sie einen Blick in die offizielle Dokumentation: [IBM Cloud-CLI (ibmcloud) Befehle ](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_cli) 
 
 ---
 
 ### Arbeiten mir PowerVS in der IBM Cloud per CLI
+
+>[!NOTE]
+> Sollten Sie in dem Teil des Workshops mit den verschiedenen Befehlen und ID`s durcheinadner kommen nutzen Sie das Dokument CLI_commands_simple_breakdown.md in dem Workshop Repo
 
 ### Basics
 
 - Hilfe aufrufen: ``ibmcloud pi help``
 
 >[!IMPORTANT]
-> Stellen sie sicher, dass Sie das Power-IaaS Plugin installiert haben falls Sie auf der CLI lokal arbeiten
+> Stellen Sie sicher, dass Sie das Power-IaaS Plugin installiert haben falls Sie auf der CLI lokal arbeiten
 >
 > ``ibmcloud plugin install power-iaas``
 
@@ -65,25 +70,27 @@
     - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
 ---
-### Arbeiten mit Snapshots
+### Vorbereitungen für Snapshots
 
 - Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins ls``
     - Wenn Sie in der Zwischenzeit keine weiteren Instanzen in Ihrem Workspace angelegt haben, sollte nur die Instanz sichtbar sein, die Sie in **Teil 01** des Workshops erstellt haben
 - Kopieren Sie die **ID** der Instanz und legen Sie sie griffbereit ab, da wir die ID im Anschluss benötigen
 - Greifen Sie auf weitere Informationen der Instanz zu mit dem Befehl ``ibmcloud pi ins get <ID>``
 - Neben **Datenträger** sollten Sie jetzt 2 ID`s sehen wenn Sie in **Teil 02 - Volume hinzufügen** ein weiter Volume an die LPAR gehängt haben
-- Kopieren Sie die **ID** des Datenträgers, der im Workshop Teil 02 manuell erstellt wurde, und legen Sie sie griffbereit ab, da wir die ID im Anschluss benötigen
+- Kopieren Sie die **ID** des Datenträgers, der im Workshop Teil 02_LPAR_Management manuell erstellt wurde, und legen Sie diese griffbereit ab, da wir die ID im Anschluss benötigen
 
 
 <img src="_images/ibmcloud_pi_ins_get.png" width="850">
 
 > [!TIP]
-> Um rauszufinden welche ID zu einem bestimmten Volume gehört, navigieren Sie über **Storage volumes** auf Ihr Volume, hier sollten Sie die ID sehen
+> Um im Portal rauszufinden welche ID zu welchem bestimmten Volume gehört, navigieren Sie über **Storage volumes** auf Ihr Volume, hier sollten Sie die ID sehen
 >
 > <img src="_images/storage_volumes.png" width="700">
+>
+> Um in der CLI die ID eines Volumes rauzfinden nutzen Sie den Befehl: ``ibmcloud pi vol ls``
 
 ---
-#### Snapshot von Instanz + Volume
+#### Snapshot von Instanz + Volume erstellen
 
 - Kreiren Sie einen Snaphot der Instanz + Volume mit dem Befehl ``ibmcloud pi ins snap cr <ID_Instanz> --name <wählen_sie_einen_Namen> --volumes <ID_Volume>``
 
@@ -98,7 +105,7 @@
 
 <img src="_images/OS_shutdown.png" width="850">
 
-- Sobald die LPAR heruntergefahren ist können Sie den restore durchführen
+- Sobald die LPAR heruntergefahren ist können Sie den Restore durchführen
 - Der Befehl für einen Restore sieht wie folgt aus: ``ibmcloud pi ins snap restore <ID_Instanz> --snapshot <ID_Snapshot>``
 - Wenn der Befehl erfolgreich gestartet wurde, sollte der Restore des Snapshots erfolgreich sein
 
@@ -138,6 +145,6 @@
 
 <img src="_images/volume_attached.png" width="850">
 
-- Im IBM Cloud Portal können Sie jetzt unter 'Attached Volumes' innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geclont haben
+- Im IBM Cloud Portal können Sie jetzt unter ``Attached Volumes`` innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geclont haben
 
 <img src="_images/volume_attached_Portal.png" width="850">

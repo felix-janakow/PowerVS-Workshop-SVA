@@ -11,22 +11,22 @@
 
 - Im IBM Cloud Catalog nach „Object Storage“ suchen und diesen Service auswählen:
 
-<img src="_images/COS_Dashboard.png" width="250"/>
+<img src="_images/COS_Dashboard.png" width="750"/>
 
 - Standard Pricing Plan wählen, nach unten scrollen und ggfs. den Service Name und Resource Group ändern. Rechts Create klicken.
-<img src="_images/COS_Service1.png" width="500"/>
+<img src="_images/COS_Service1.png" width="750"/>
 
 - Die Service Instanz wird angezeigt, ein Bucket kann erstellt werden. Klick Create bucket:
-<img src="_images/COS_Service2.png" width="500"/>
+<img src="_images/COS_Service2.png" width="750"/>
 
 - Gewünschte Bucket Art auswählen und Create klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket):
   
-<img src="_images/COS_Create_bucket1.png" width="500"/>
+<img src="_images/COS_Create_bucket1.png" width="750"/>
 
 - Ggfs. Name des Buckets ändern, Next klicken, wenn gewünscht, können im nächsten Schritt gleich Dateien hochgeladen werden. 
 Wenn die Dateien später hochgeladen werden, auf Next klicken, die Bucket Configuration wird automatisch angezeigt. 
 
-<img src="_images/COS_Create_bucket2.png" width="500"/>
+<img src="_images/COS_Create_bucket2.png" width="750"/>
 
 - Wurden keine Dateien während der COS Bucket Erstellung hochgeladen, so können diese jederzeit durch einen Klick auf den Bucket Namen und dann Upload hochgeladen werden.
 
@@ -34,7 +34,7 @@ Wenn die Dateien später hochgeladen werden, auf Next klicken, die Bucket Config
 
 In der COS Service Instanz auf das Tab Service Credentials wechseln. Die bei der Erstellung des COS Buckets angelegten Service Credentials werden angezeigt. Diese beinhalten allerdings keine HMAC Keys, welche aber für den Image Transfer erforderlich sind. Eine Änderung der bestehenden Credentials ist nicht möglich, daher werden zusätzliche Credentials angelegt:
 
-<img src="_images/Service_Instanzen.png" width="500"/>
+<img src="_images/Service_Instanzen.png" width="750"/>
 
 - Klick New Credentials
   
@@ -46,15 +46,15 @@ Für den Image Transfer werden folgende Informationen benötigt: Region, Image f
 
 - Anzeigen und Kopieren der Service Credentials: Erweitern des "Twisties" neben dem Service Credential Namen, Copy and Paste der Zugriffsdaten, insbesondere der HMAC access und secret access keys:
 
-<img src="_images/HMAC_Anzeige.png" width="500"/>
+<img src="_images/HMAC_Anzeige.png" width="600"/>
 
 ## Weitere Daten für Image Transfer anzeigen
  
 - Die Region und den Bucket name findet man in der COS Service Instance:
 
-<img src="_images/COS_Service_Daten.png" width="500"/>
+<img src="_images/COS_Service_Daten.png" width="600"/>
 
 - Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf Bucket Name: 
 
-<img src="_images/COS_Imagefilename.png" width="500"/>
+<img src="_images/COS_Imagefilename.png" width="600"/>
 

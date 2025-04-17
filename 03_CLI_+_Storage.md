@@ -120,3 +120,5 @@
 
  - Wenn Sie jetzt jetzt wieder Ihre Volumes mit ``ibmcloud pi vol ls`` auflisten, müsste das geclonte Volume unter dem von Ihnen vergebenen Namen sichtbar sein
 
+ <img src="_images/ibmcloud_pi_vol_ls.png" width="850">
+

@@ -1,6 +1,6 @@
 # 02_LPAR_Management
 
-### LPAR rezising
+### LPAR resizing
 
 - Um die Spezifikationen Ihrer LPAR zu ändern, wählen Sie zuerst Ihre LPAR unter **Compute** und dann unter **Virtual server instances** Ihre Instanz aus 
 - Wenn Sie Ihre Instanz offen haben klicken Sie in dem Kasten **Virtual server instance details**, welcher sich oben unter dem Namen Ihrer Instanz befindet, rechts in der oberen Ecke auf ``Edit details``

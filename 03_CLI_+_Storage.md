@@ -139,3 +139,5 @@
 <img src="_images/volume_attached.png" width="850">
 
 - Im IBM Cloud Portal können Sie jetzt unter 'Attached Volumes' innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geclont haben
+
+<img src="_images/volume_attached_Portal.png" width="850">

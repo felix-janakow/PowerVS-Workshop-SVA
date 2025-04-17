@@ -13,7 +13,7 @@
 
 <img src="_images/resize_LPAR.png" width="300">
  
- - Das Rezising kann nach erfolgter Bestätigung einige Minuten in Anspruch nehmen, Sie sollten neben dem Namen Ihrer Instanz eine kleine "Ladeanimation sehen"
+ - Das Resizing kann nach erfolgter Bestätigung einige Minuten in Anspruch nehmen, Sie sollten neben dem Namen Ihrer Instanz eine kleine "Ladeanimation sehen"
  - nach einigen Minuten müsste die LPAR nun erfolgreich rezised sein 
 
 ----

@@ -66,7 +66,18 @@
 
 #### Instanz Snapshot aufnehmen
 
-- Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins``
+- Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins ls``
+    - Wenn Sie in der Zwischenzeit keine weiteren Instanzen in Ihrem Workspace angelegt haben, sollte nur die Instanz sichtbar sein, die Sie in **Teil 01** des Workshops erstellt haben
+- Kopieren Sie die **ID** der Instanz raus
+- Greifen Sie auf weitere Informationen der Instanz zu mit dem Befehl ``ibmcloud pi ins get <ID>``
+- Neben **Datenträger** sollten Sie jetzt 2 ID`s sehen wenn Sie in **Teil 02 - Volume hinzufügen** ein weiter Volume an die LPAR gehängt haben
+
+<img src="_images/ibmcloud_pi_ins_get.png" width="700">
+
+> [!TIP]
+> Um rauszufinden welche ID zu einem bestimmten Volume gehört, navigieren Sie über **Storage volumes** auf Ihr Volume, hier sollten Sie die ID sehen
+>
+> <img src="_images/storage_volumes.png" width="700">
 
 
 #### Instanz Volume clonen

@@ -83,7 +83,7 @@
 > <img src="_images/storage_volumes.png" width="700">
 
 ---
-##### Snapshot von Instanz + Volume
+#### Snapshot von Instanz + Volume
 
 - Kreiren Sie einen Snaphot der Instanz + Volume mit dem Befehl ``ibmcloud pi ins snap cr <ID_Instanz> --name <wählen_sie_einen_Namen> --volumes <ID_Volume>``
 
@@ -112,5 +112,11 @@
 ---
 #### Instanz Volume clonen
 
+ - Um ihr Volume zu clonen müssen Sie zuerst die ID des zu clonenden Volumes herausfinden, am besten machen Sie dies mit dem Befehl ``ibmcloud pi vol ls``
+ - Suchen Sie sich das Volume aus, welches Sie clonen möchten und kopieren Sie sich die ID
+ - Clonen Sie ihr Volume mit dem Befehl ``ibmcloud pi vol cla cr <clone_name> --volumes <ID_volume>``
 
+ <img src="_images/ibmcloud_clone.png" width="850">
+
+ - Wenn Sie jetzt jetzt wieder Ihre Volumes mit ``ibmcloud pi vol ls`` auflisten, müsste das geclonte Volume unter dem von Ihnen vergebenen Namen sichtbar sein
 

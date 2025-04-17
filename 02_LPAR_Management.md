@@ -20,10 +20,11 @@
 
 <img src="_images/nav_open_console.png" width="700">
 
-- Im Anschluss öffnet Sich ein ihre Console in einem extra Fenster, in welchem Sie aufgefordert werden Ihren User Login und Ihr Passwort einzugeben.
+- Im Anschluss öffnet Sich ein ihre Console in einem extra Fenster, in welchem Sie aufgefordert werden Ihren User Login und Ihr Passwort einzugeben
 
 <img src="_images/console_login.png" width="600">
 
+- melden Sie sich mit Ihren Daten an uum auf die LPAR zuzugreifen
 
 ----
 ### Volume hinzufügen 

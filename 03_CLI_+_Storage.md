@@ -51,7 +51,12 @@
 
 ### Arbeiten mir PowerVS in der IBM Cloud per CLI
 
-#### Hilfe bekommen
+#### Basics
+
+- Hilfe aufrufen: ``ibmcloud pi help``
+- vorhandene Workspaces auflisten: ``ibmcloud pi ws list``
+- einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
+    - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
 #### Instanz Snapshot aufnehmen
 

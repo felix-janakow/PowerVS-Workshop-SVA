@@ -1,7 +1,7 @@
 # 03_CLI_+_Storage
 ### IBM Cloud-CLI lokal nutzen
 
-- Um die IBM Cloud CLI lokal zu nutzen öffnen Sie ihr Terminal und führen Sie das folgendee Skirpt je nach Betriebssystem aus: 
+- Um die IBM Cloud CLI lokal zu nutzen öffnen Sie ihr Terminal und führen Sie das folgende Skript je nach Betriebssystem aus: 
 
     - MacOS: ``curl -fsSL https://clis.cloud.ibm.com/install/osx | sh``
     - Linux: ``curl -fsSL https://clis.cloud.ibm.com/install/linux | sh``
@@ -10,9 +10,9 @@
         ``[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12``
 
 - Nach erfolgreicher Installation könenn Sie sich mit dem Befehl``ibmcloud login`` an Ihrem Account anmelden
-    -  sollten Sie beim versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren Einmalkenncode im IBM Cloud Portal.
-        - Den Einmalkenncode zu Anmeldung in der CLI finden Sie wenn sie oben in der Navigationsbar ganz rechts in der Ecke auf das Profilicon klicken und danach ``Log in to CLI and API`` klicken, kopieren Sie jetzt nurnoch den Loginbefehl für die IBM Cloud CLI heraus und pasten Ihn in ihr Terminal.
-        - Sie sollten nun lokal über die CLI in ihrem Account sein  
+    -  Sollten Sie beim versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren Einmalkenncode im IBM Cloud Portal.
+       - Den Einmalkenncode zur Anmeldung in der CLI finden Sie, indem Sie oben in der Navigationsleiste ganz rechts auf das Profil-Icon klicken und anschließend auf ``Log in to CLI and API`` gehen. Kopieren Sie nun den Login-Befehl für die IBM Cloud CLI und fügen Sie ihn in Ihr Terminal ein. 
+       - Sie sollten nun lokal über die CLI in Ihrem Account angemeldet sein.
 
 <img src="_images/CLI_login.png" width="700">
 
@@ -22,7 +22,7 @@
 > Die aktuelle Version Ihrer CLI finden Sie über ``ibmcloud -v`` heraus
 
 - Da wir mit PowerVS arbeiten möchten brauchen wir für unsere CLI noch ein Plugin
-- Das Power-IaaS Plugin installieren wir über den Befehl ``ibmcloud plugin install power-iaas```
+- Das Power-IaaS Plugin installieren wir über den Befehl ``ibmcloud plugin install power-iaas``
 
 >[!NOTE]
 > Eine Liste aller Plugins finden Sie über ``ibmcloud plugin repo-plugins``
@@ -54,8 +54,8 @@
 #### Basics
 
 - Hilfe aufrufen: ``ibmcloud pi help``
-- vorhandene Workspaces auflisten: ``ibmcloud pi ws list``
-- einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
+- Vorhandene Workspaces auflisten: ``ibmcloud pi ws list``
+- Einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
     - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
 #### Instanz Snapshot aufnehmen

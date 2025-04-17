@@ -54,11 +54,18 @@
 #### Basics
 
 - Hilfe aufrufen: ``ibmcloud pi help``
+
+>[!IMPORTANT]
+> Stellen sie sicher, dass Sie das Power-IaaS Plugin installiert haben falls Sie auf der CLI lokal arbeiten
+> ``ibmcloud plugin install power-iaas``
+
 - Vorhandene Workspaces auflisten: ``ibmcloud pi ws list``
 - Einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
     - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
 #### Instanz Snapshot aufnehmen
+
+- Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins``
 
 
 #### Instanz Volume clonen

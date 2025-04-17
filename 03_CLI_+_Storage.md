@@ -110,7 +110,7 @@
 <img src="_images/OS_start.png" width="850">
 
 ---
-#### Instanz Volume clonen
+#### Volume clonen
 
  - Um ihr Volume zu clonen müssen Sie zuerst die ID des zu clonenden Volumes herausfinden, am besten machen Sie dies mit dem Befehl ``ibmcloud pi vol ls``
  - Suchen Sie sich das Volume aus, welches Sie clonen möchten und kopieren Sie sich die ID
@@ -122,3 +122,20 @@
 
  <img src="_images/ibmcloud_pi_vol_ls.png" width="850">
 
+---
+#### Volume clone an neue LPAR hängen
+
+- Erstellen Sie zunächst eine zweite LPAR an die Sie das geclonte Volme anhängen möchten, befolgen Sie dafür die Schritte aus **01_Workspace_anlegen - Schritt 4: LPAR erstellen**
+
+<img src="_images/LPAR2.png" width="850">
+
+- Finden Sie die ID ihrer neuen Instanz im IBM Cloud Portal oder mit dem Befehl ``ibmcloud pi ins ls`` heraus
+- Finden Sie die ID des geclonten Volumes mit ``ibmcloud pi vol ls``heraus
+- Attachen Sie das geclonte Volume an Ihre neue LPAR mit dem Befehl: ``ibmcloud pi ins vol attach <ID_Instance> --volumes <ID_cloned_Volume>``
+
+> [!WARNING]
+> Warten Sie bis die neue LPAR vollständig hochgefahren ist, ansonsten lässt sich das Volume nicht anhängen
+
+<img src="_images/volume_attached.png" width="850">
+
+- Im IBM Cloud Portal können Sie jetzt unter 'Attached Volumes' innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geclont haben

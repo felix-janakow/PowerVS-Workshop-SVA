@@ -72,7 +72,7 @@
 - Greifen Sie auf weitere Informationen der Instanz zu mit dem Befehl ``ibmcloud pi ins get <ID>``
 - Neben **Datenträger** sollten Sie jetzt 2 ID`s sehen wenn Sie in **Teil 02 - Volume hinzufügen** ein weiter Volume an die LPAR gehängt haben
 - Kopieren Sie die **ID** des Datenträgers, der im Workshop Teil 02 manuell erstellt wurde, und legen Sie sie griffbereit ab, da wir die ID im Anschluss benötigen
-- Kreiren Sie jetzt den Snaphot mit dem Befehl ``ibmcloud pi ins snap cr <ID_Instanz> --name <wählen_sie_einen_Namen> --volumes <ID_Volume>``
+
 
 <img src="_images/ibmcloud_pi_ins_get.png" width="850">
 
@@ -81,7 +81,28 @@
 >
 > <img src="_images/storage_volumes.png" width="700">
 
+- Kreiren Sie jetzt den Snaphot mit dem Befehl ``ibmcloud pi ins snap cr <ID_Instanz> --name <wählen_sie_einen_Namen> --volumes <ID_Volume>``
 
+<img src="_images/ibmcloud_pi_snap.png" width="850">
 
+- Um den Snapshot zu suchen und die ID des Snapshots herauszufinden nutzen Sie den Befehl ``ibmcloud snap ls``
+
+<img src="_images/ibmcloud_pi_snap_ls.png" width="850">
+
+- Um den Snapshot für eine Wiederherstellung zu nutzen müssen Sie die LPAR zuerst herunterfahren.
+    - Gehen Sie zum herunterfahren über **Ihren Workspace** unter **Compute** auf **Virtual Server Instances**, wählen Sie Ihre Instanz aus und klicken Sie ganz rechts oben, auf der höhe des Namens, auf das Icon mit den 3 Punkten, klicken Sie dann auf ``OS Shutdown``
+
+<img src="_images/OS_shutdown.png" width="850">
+
+- Sobald die LPAR heruntergefahren ist können Sie den restore durchführen
+- Der Befehl für einen Restore sieht wie folgt aus: ``ibmcloud pi ins snap restore <ID_Instanz> --snapshot <ID_Snapshot>``
+- Wenn der Befehl erfolgreich gestartet wurde, sollte der Restore des Snapshots erfolgreich sein
+
+<img src="_images/restore-snapshot.png" width="850">
+
+- Schalten Sie zum Schluss Ihre LPAR wieder aktiv
+    - Die LPAR kann genauso gestartet werden wie Sie heruntergefahren wurde, navigieren Sie über das Icon mit den 3 Punkten und wählen Sie ``Start``
+
+<img src="_images/OS_start.png" width="850">
 
 #### Instanz Volume clonen

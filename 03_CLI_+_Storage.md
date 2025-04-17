@@ -57,6 +57,7 @@
 
 >[!IMPORTANT]
 > Stellen sie sicher, dass Sie das Power-IaaS Plugin installiert haben falls Sie auf der CLI lokal arbeiten
+>
 > ``ibmcloud plugin install power-iaas``
 
 - Vorhandene Workspaces auflisten: ``ibmcloud pi ws list``

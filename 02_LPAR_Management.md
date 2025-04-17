@@ -16,23 +16,28 @@
 ----
 ### Zugriff über die Console
 
+- Um über das Cloud Portal direkt auf die Console zuzugreifen
 
 
 ----
 ### Volume hinzufügen 
 
-- Um ein Volume an eine LPAR hinzuzufügen gehen Sie innerhlab Ihrer Instant über den Bereich **Attached Volumes** auf ``Create volume +``
+- Um ein Volume an eine LPAR hinzuzufügen gehen Sie innerhalb Ihrer Instanz über den Bereich **Attached Volumes** auf ``Create volume +``
     - Ihre bereits vorhandenen Volumes sollten Ihnen ebenfalls in der Übersicht angezeigt sein, es ist auch möglich nach Volumes über das Suchfeld zu suchen 
 - vergeben Sie für Ihr neues Volume zunächst einen Namen
 - als **Tier** reicht für diesen Workshop **Tier 3**
-- für **Number of volumes** bleiebn wir beim Standardwert 1
-- den Schalter **Shareable** lassen für für den Workshop zunächst aus
+- für **Number of volumes** bleiben wir beim Standardwert 1
+- den Schalter **Shareable** lassen wir für für den Workshop zunächst aus
 - für **Storage Pool** können wir **Affinity** wählen um das Volume im selben Pool wie ein spezifiziertess Volume oder VM zu erstellen 
 - als Affinity Volume wählen wir Volume um das Volume im selben Pool wie ein wählbares Volume zu erstellen
-- als nächstes wählen wir ein spezfiisches Volume als Affinity Object aus
-    - beim erstellen der LPAR wurde ein Volume mit erstellt, wir wählen dieses als Affinity volume aus
+- als nächstes wählen wir ein spezfisches Volume als Affinity Object aus
+    - beim erstellen der LPAR wurde ein Volume mit erstellt, wir wählen dieses als Affinity Volume aus
         - den Namen des Volumes finden Sie unter **Attached Volumes**
 - bestätigen Sie Ihre Änderungen indem Sie den Haken bei ***I agree to the Terms and conditions*** setzen und klicken Sie auf ``Create and attach``
 
 <img src="_images/create_and_attach_2.png" width="300">
 <img src="_images/create_and_attach_1.png" width="300">
+
+- nach einer kurzen Wartezeit sollte das Volume attached sein
+
+<img src="_images/attached_volumes.png" width="800">

@@ -51,7 +51,7 @@
 
 ### Arbeiten mir PowerVS in der IBM Cloud per CLI
 
-#### Basics
+### Basics
 
 - Hilfe aufrufen: ``ibmcloud pi help``
 
@@ -64,7 +64,8 @@
 - Einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
     - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
-#### arbeiten mit Snapshots
+---
+### Arbeiten mit Snapshots
 
 - Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins ls``
     - Wenn Sie in der Zwischenzeit keine weiteren Instanzen in Ihrem Workspace angelegt haben, sollte nur die Instanz sichtbar sein, die Sie in **Teil 01** des Workshops erstellt haben
@@ -81,6 +82,7 @@
 >
 > <img src="_images/storage_volumes.png" width="700">
 
+---
 ##### Snapshot von Instanz + Volume
 
 - Kreiren Sie einen Snaphot der Instanz + Volume mit dem Befehl ``ibmcloud pi ins snap cr <ID_Instanz> --name <wählen_sie_einen_Namen> --volumes <ID_Volume>``
@@ -107,9 +109,8 @@
 
 <img src="_images/OS_start.png" width="850">
 
-##### Snapshot nur Volume
-
-- Kreiren Sie einen Snaphot des Volumes mit dem Befehl ``ibmcloud vol snap cr <ID_Volume> --name <wählen_sie_einen_Namen>``
-
+---
 #### Instanz Volume clonen
+
+
 

@@ -16,7 +16,13 @@
 ----
 ### Zugriff über die Console
 
-- Um über das Cloud Portal direkt auf die Console zuzugreifen
+- Um über das Cloud Portal direkt auf die Console zuzugreifen gehen Sie rechts oben auf der höhe des Namens Ihrer Instanz auf das Icon mit den 3 Punkten, klicken Sie darauf und wählen Sie anschließend ``Open console``
+
+<img src="_images/nav_open_console.png" width="700">
+
+- Im Anschluss öffnet Sich ein ihre Console in einem extra Fenster, in welchem Sie aufgefordert werden Ihren User Login und Ihr Passwort einzugeben.
+
+<img src="_images/console_login.png" width="600">
 
 
 ----

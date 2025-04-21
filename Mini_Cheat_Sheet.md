@@ -28,9 +28,9 @@
 
 ## Klonen von Volumes
 
-**Klon von Volume erstellen:**``ibmcloud pi vol cla cr <clone_name> --volumes <ID_volume>``
-**Geklontes Volume auflisten:**``ibmcloud pi vol ls``
-**Klon an neue PowerVS Instanz/ LPAR hängen:** ``ibmcloud pi ins vol attach <ID_Instanz> --volumes <ID_cloned_Volume>``
+- **Klon von Volume erstellen:**``ibmcloud pi vol cla cr <clone_name> --volumes <ID_volume>``
+- **Geklontes Volume auflisten:**``ibmcloud pi vol ls``
+- **Klon an neue PowerVS Instanz/ LPAR hängen:** ``ibmcloud pi ins vol attach <ID_Instanz> --volumes <ID_cloned_Volume>``
 
 ## ID`s leicht herausfinden
 - **Virtual Server Instanz/ LPAR`s auflisten** ``ibmcloud pi ins ls`` 

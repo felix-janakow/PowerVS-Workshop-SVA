@@ -13,7 +13,7 @@
 
 <img src="_images/resize_LPAR.png" width="300">
  
- - Das Resizing kann nach erfolgter Bestätigung einige Minuten in Anspruch nehmen, Sie sollten neben dem Namen Ihrer Instanz eine kleine "Ladeanimation sehen"
+ - Das Resizing kann nach erfolgter Bestätigung einige Minuten in Anspruch nehmen, Sie sollten neben dem Namen Ihrer Instanz eine kleine "Ladeanimation" sehen
  - nach einigen Minuten müsste die LPAR nun erfolgreich rezised sein 
 
 ----
@@ -32,7 +32,7 @@
 ----
 ### Volume hinzufügen 
 
-- Um ein Volume an eine LPAR hinzuzufügen, gehen Sie innerhalb Ihrer Instanz in den Bereich Attached Volumes und klicken auf ``Create volume + ``
+- Um ein Volume an eine LPAR hinzuzufügen, gehen Sie innerhalb Ihrer Instanz in den Bereich **Attached Volumes** und klicken auf ``Create volume + ``
     - Ihre bereits vorhandenen Volumes werden Ihnen ebenfalls in der Übersicht angezeigt. Sie können auch nach Volumes über das Suchfeld suchen
 - Vergeben Sie zunächst einen Namen für Ihr neues Volume
 - Als **Tier** wählen Sie für diesen Workshop **Tier 3**
@@ -41,7 +41,7 @@
 - Für **Storage Pool** wählen wir **Affinity**, um das Volume im selben Pool wie ein spezifiziertes Volume oder eine VM zu erstellen 
 - Als Affinity Volume wählen wir **Volume** um das neue Volume im selben Pool wie ein wählbares Volume zu erstellen
 - Als nächstes wählen wir ein spezifisches Volume als **Affinity Object** aus. 
-    - Beim Erstellen der LPAR wurde ein Volume mit erstellt, wir wählen dieses als Affinity Volume aus. Den Namen des Volumes finden Sie unter Attached Volumes.
+    - Beim Erstellen der LPAR wurde ein Volume mit erstellt, wir wählen dieses als Affinity Volume aus. Den Namen des Volumes finden Sie unter **Attached Volumes**.
 - Bestätigen Sie Ihre Änderungen indem Sie den Haken bei ***I agree to the Terms and conditions*** setzen und klicken Sie auf ``Create and attach``
 
 <img src="_images/create_and_attach_2.png" width="300">

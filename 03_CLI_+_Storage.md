@@ -1,7 +1,7 @@
 # 03_CLI_+_Storage
 ### IBM Cloud-CLI lokal nutzen
 
-- Um die IBM Cloud CLI lokal zu nutzen öffnen Sie ihr Terminal und führen Sie das folgende Skript je nach Betriebssystem aus: 
+- Um die IBM Cloud-CLI lokal zu nutzen öffnen Sie ihr Terminal und führen Sie das folgende Skript je nach Betriebssystem aus: 
 
     - MacOS: ``curl -fsSL https://clis.cloud.ibm.com/install/osx | sh``
     - Linux: ``curl -fsSL https://clis.cloud.ibm.com/install/linux | sh``
@@ -10,9 +10,9 @@
         ``[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12``
 
 - Nach erfolgreicher Installation könenn Sie sich mit dem Befehl``ibmcloud login`` an Ihrem Account anmelden
-    -  Sollten Sie beim Versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren Einmalkenncode im IBM Cloud Portal.
-       - Den Einmalkenncode zur Anmeldung in der CLI finden Sie, indem Sie oben in der Navigationsleiste ganz rechts auf das Profil-Icon klicken und anschließend auf ``Log in to CLI and API`` gehen. Kopieren Sie nun den Login-Befehl für die IBM Cloud CLI und fügen Sie ihn in Ihr Terminal ein. 
-       - Sie sollten nun lokal über die CLI in Ihrem Account angemeldet sein.
+    -  Sollten Sie beim Versuch der Anmeldung einen Fehler erhalten wie ***Sie verwenden eine eingebundene Benutzer-ID; verwenden Sie einen Einmalkenncode ( ibmcloud login --sso ) oder einen API-Schlüssel ( ibmcloud login --apikey key or @key_file ) zur Authentifizierung.*** , dann holen Sie sich ihren **Einmalkenncode** im IBM Cloud Portal.
+       - Den Einmalkenncode zur Anmeldung in der CLI finden Sie, indem Sie oben in der Navigationsleiste ganz rechts auf das Profil-Icon klicken und anschließend auf ``Log in to CLI and API`` gehen. Kopieren Sie nun den Login-Befehl für die IBM Cloud-CLI und fügen Sie diesen in Ihr Terminal ein. 
+       - Sie sollten nun lokal über die CLI in Ihrem Account angemeldet sein
 
 <img src="_images/CLI_login.png" width="700">
 
@@ -29,16 +29,16 @@
 > - Um Plugins zu aktualisieren nutzen Sie ``ibmcloud plugin update``
 
 >[!NOTE]
-> Weitere Infos über die IBM Cloud CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli)
+> Weitere Infos über die IBM Cloud-CLI finden Sie in der offiziellen Dokumentation: [IBM Cloud-CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli)
 
 ---
 ### IBM Cloud-CLI im GUI
 
-- Es ist natürlich auch möglich die IBM Cloud CLI im IBM Cloud Portal zu nutzen, wählen Sie dafür oben in der Navigationsbar das Icon aus, welches wie ein Terminal aussieht und starten Sie per Klick eine neue Cloud Shell
+- Es ist natürlich auch möglich die IBM Cloud-CLI im IBM Cloud Portal zu nutzen, wählen Sie dafür oben in der Navigationsbar das Icon aus, welches wie ein Terminal aussieht und starten Sie per Klick eine neue Cloud Shell
 
 <img src="_images/Cloud-Shell.png" width="700">
 
-- Sie können jetzt direkt mit der IBM Cloud CLI interagieren, tippen Sie beispielsweise ``ibmcloud help`` ein um Hilfe zu bekommen 
+- Sie können jetzt direkt mit der IBM Cloud-CLI interagieren, tippen Sie beispielsweise ``ibmcloud help`` ein um Hilfe zu bekommen 
 - Testen Sie den Befehl ``ibmcloud plugin list``, Sie sehen dass in der Cloud Shell bereits alle Plugins installiert sind
 
 >[!TIP]
@@ -54,7 +54,7 @@
 ### Arbeiten mir PowerVS in der IBM Cloud per CLI
 
 >[!NOTE]
-> Sollten Sie in dem Teil des Workshops mit den verschiedenen Befehlen und ID`s durcheinadner kommen nutzen Sie das Dokument CLI_commands_cheat_sheet.md in dem Workshop Repo
+> Sollten Sie im folgenden Teil des Workshops mit den verschiedenen Befehlen und IDs durcheinanderkommen, nutzen Sie das Dokument Mini_Cheat_Sheet.md im Workshop-Repository für eine bessere Übersicht über die CLI-Commands.
 
 ### Basics
 
@@ -73,7 +73,7 @@
 ### Vorbereitungen für Snapshots
 
 - Nachdem Sie Ihren Workspace als Target ausgewählt haben listen Sie alle verfügbaren Instanzen im Workspace auf mit dem Befehl: ``ibmcloud pi ins ls``
-    - Wenn Sie in der Zwischenzeit keine weiteren Instanzen in Ihrem Workspace angelegt haben, sollte nur die Instanz sichtbar sein, die Sie in **Teil 01** des Workshops erstellt haben
+    - Wenn Sie in der Zwischenzeit keine weiteren Instanzen in Ihrem Workspace angelegt haben sollte nur die Instanz sichtbar sein, die Sie in **Teil 01** des Workshops erstellt haben
 - Kopieren Sie die **ID** der Instanz und legen Sie sie griffbereit ab, da wir die ID im Anschluss benötigen
 - Greifen Sie auf weitere Informationen der Instanz zu mit dem Befehl ``ibmcloud pi ins get <ID>``
 - Neben **Datenträger** sollten Sie jetzt 2 ID`s sehen wenn Sie in **Teil 02 - Volume hinzufügen** ein weiter Volume an die LPAR gehängt haben
@@ -100,8 +100,8 @@
 
 <img src="_images/ibmcloud_snap_ls.png" width="850">
 
-- Um den Snapshot für eine Wiederherstellung zu nutzen müssen Sie die LPAR zuerst herunterfahren.
-    - Gehen Sie zum herunterfahren über **Ihren Workspace** unter **Compute** auf **Virtual Server Instances**, wählen Sie Ihre Instanz aus und klicken Sie ganz rechts oben, auf der höhe des Namens, auf das Icon mit den 3 Punkten, klicken Sie dann auf ``OS Shutdown``
+- Um den Snapshot für eine Wiederherstellung zu nutzen müssen Sie die LPAR zuerst herunterfahren
+    - Gehen Sie zum herunterfahren über Ihren Workspace unter **Compute** auf **Virtual Server Instances**, wählen Sie Ihre Instanz aus und klicken Sie ganz rechts oben, auf der höhe des Namens, auf das Icon mit den 3 Punkten, klicken Sie dann auf ``OS Shutdown``
 
 <img src="_images/OS_shutdown.png" width="850">
 
@@ -117,34 +117,34 @@
 <img src="_images/OS_start.png" width="850">
 
 ---
-#### Volume clonen
+#### Volume klonen
 
- - Um ihr Volume zu clonen müssen Sie zuerst die ID des zu clonenden Volumes herausfinden, am besten machen Sie dies mit dem Befehl ``ibmcloud pi vol ls``
- - Suchen Sie sich das Volume aus, welches Sie clonen möchten und kopieren Sie sich die ID
- - Clonen Sie ihr Volume mit dem Befehl ``ibmcloud pi vol cla cr <clone_name> --volumes <ID_volume>``
+ - Um ihr Volume zu klonen müssen Sie zuerst die ID des zu klonenden Volumes herausfinden, am besten machen Sie dies mit dem Befehl ``ibmcloud pi vol ls``
+ - Suchen Sie sich das Volume aus, welches Sie klonen möchten und kopieren Sie sich die ID
+ - klonen Sie ihr Volume mit dem Befehl ``ibmcloud pi vol cla cr <clone_name> --volumes <ID_volume>``
 
  <img src="_images/ibmcloud_clone.png" width="850">
 
- - Wenn Sie jetzt jetzt wieder Ihre Volumes mit ``ibmcloud pi vol ls`` auflisten, müsste das geclonte Volume unter dem von Ihnen vergebenen Namen sichtbar sein
+ - Wenn Sie jetzt jetzt wieder Ihre Volumes mit ``ibmcloud pi vol ls`` auflisten, müsste das geklonte Volume unter dem von Ihnen vergebenen Namen sichtbar sein
 
  <img src="_images/ibmcloud_pi_vol_ls.png" width="850">
 
 ---
 #### Volume clone an neue LPAR hängen
 
-- Erstellen Sie zunächst eine zweite LPAR an die Sie das geclonte Volme anhängen möchten, befolgen Sie dafür die Schritte aus **01_Workspace_anlegen - Schritt 4: LPAR erstellen**
+- Erstellen Sie zunächst eine zweite LPAR an die Sie das gekolonte Volme anhängen möchten, befolgen Sie dafür die Schritte aus **01_Workspace_anlegen - Schritt 4: LPAR erstellen**
 
 <img src="_images/LPAR2.png" width="850">
 
 - Finden Sie die ID ihrer neuen Instanz im IBM Cloud Portal oder mit dem Befehl ``ibmcloud pi ins ls`` heraus
-- Finden Sie die ID des geclonten Volumes mit ``ibmcloud pi vol ls``heraus
-- Attachen Sie das geclonte Volume an Ihre neue LPAR mit dem Befehl: ``ibmcloud pi ins vol attach <ID_Instance> --volumes <ID_cloned_Volume>``
+- Finden Sie die ID des geklonten Volumes mit ``ibmcloud pi vol ls``heraus
+- Attachen Sie das geklonte Volume an Ihre neue LPAR mit dem Befehl: ``ibmcloud pi ins vol attach <ID_Instance> --volumes <ID_cloned_Volume>``
 
 > [!WARNING]
 > Warten Sie bis die neue LPAR vollständig hochgefahren ist, ansonsten lässt sich das Volume nicht anhängen
 
 <img src="_images/volume_attached.png" width="850">
 
-- Im IBM Cloud Portal können Sie jetzt unter ``Attached Volumes`` innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geclont haben
+- Im IBM Cloud Portal können Sie jetzt unter ``Attached Volumes`` innerhalb Ihrer zweiten Virtual Server Instance das Volume sehen, das Sie zuvor von Ihrer ersten LPAR geklont haben
 
 <img src="_images/volume_attached_Portal.png" width="850">

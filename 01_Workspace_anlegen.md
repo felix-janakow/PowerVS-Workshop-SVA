@@ -25,7 +25,7 @@
 - Als **Resource group** wählen Sie die Ihnen zugeordente Ressourcengruppe 
 - **User tags** und **Access management tags** können im Moment ignoeriert werden
 - Gehen Sie anschließend auf ``Continue``
-- Der Punkt Monitoring ist optional  (zur optimalen Fehlerbehebung und der Reduzierung von Ausfallzeiten empfohlen) 
+- Der Punkt Monitoring ist optional (zur optimalen Fehlerbehebung und der Reduzierung von Ausfallzeiten empfohlen)
 - Gehen Sie anschließend auf ``Finish``
 - Setzen Sie den Haken bei ***I agree to the Terms and Conditions*** und wählen Sie zum Schluss ``Create``
 
@@ -72,7 +72,7 @@
 - Vergeben Sie einen Namen für den Key und fügen Sie den öffentlichen Schlüssel ihres SSH-Keys im unteren Feld ein und drücken Sie auf ``Add SSH key``
 
 > [!NOTE]
-> Der SSH-Key sollte im vorhinein mit z.b. ``ssh-keygen`` (für Linux und MacOs) erstellt werden
+> Der SSH-Key sollte vorher mit z.b. ``ssh-keygen`` (für Linux und MacOs) erstellt werden
 > **Beispiel:** ``ssh-keygen -t rsa -b 4096 -C "test-key"``
 > Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Keys mit Power Virtual Servern](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)
 
@@ -85,7 +85,7 @@
 - Um die LPAR zu erstellen gehen Sie über **Compute** auf **Virtual Server Instances +**
 - Vergeben Sie zuerst einen Namen für Ihre Instanz
 - Wählen Sie für **Number of instances** **1** aus
-- Wählen Sie unter **SSH key** den Key aus den Sie im vorherigen Schritt erstellt haben
+- Wählen Sie unter **SSH key** den Key aus den Sie im vorherigen Schritt erstellt/angelegt haben
 
 > [!NOTE]
 > Nehmen Sie sich die Zeit, um sich über das Info-Icon mit den erweiterten Einstellungsmöglichkeiten bei der Provisionierung von Instanzen vertraut zu machen
@@ -103,9 +103,9 @@
 - Lassen Sie die restlichen Felder auf den Standardeinstellungen und gehen Sie weiter mit ``Continue``
 - Wählen Sie eine Power Maschine aus, welche Sie provisionieren möchten (für die Workshop Zwecke reicht z.b. eine s922)
 - Für **Core type** bleiben wir bei der Einstellung **Shared uncapped**
-- Für **Cores** wählen wir 0,5
+- Für **Cores** wählen wir 0,5 (wird im weiteren Verlauf des Workshops angepasst)
 - Für **Virtual Cores** bleiben wir mit der Standardeinstellung 1
-- Für **Memory (GiB)** wählen wir 4GB
+- Für **Memory (GiB)** wählen wir 4GB (wird im weiteren Verlauf des Workshops angepasst)
 - Gehen Sie weiter mit ``Continue``
 - **Storage volumes** lassen wir erst mal aus, diese werden in einem weiteren Teil des Workshops nochmal behandelt
 - Gehen Sie weiter mit ``Continue``

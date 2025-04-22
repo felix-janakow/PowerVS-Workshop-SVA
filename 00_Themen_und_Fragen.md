@@ -26,3 +26,4 @@ Auf dieser Seite sind die Themen und Fragen des SVA Teams zu Power VS zusammenge
 | Q8   | Zugriffskonzepte in die IBM Cloud                              | Demo               | |
 | Q9   | Welche Um-Systeme braucht man zwingend bei einem RISE Vertrag? | Diskussion         | |
 | Q10  | Verdienstmöglichkeiten für SVA?                                | PDF                | [Verdienst](_materials/PowerVS_Verdienstmoeglichkeiten.pdf) |
+| Dok  | Ressourcen Links                                               | PDF                | [Links](_materials/PowerVS_Ressourcen.pdf) |

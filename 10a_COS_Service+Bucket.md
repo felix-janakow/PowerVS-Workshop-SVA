@@ -54,7 +54,7 @@ Für den Image Transfer werden folgende Informationen benötigt: Region, Image f
 
 <img src="_images/COS_Service_Daten.png" width="600"/>
 
-- Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf Bucket Name: 
+- Der Image filename wird im COS Bucket unter Objects gezeigt - Klick auf ``Bucket Name``: 
 
 <img src="_images/COS_Imagefilename.png" width="600"/>
 

@@ -76,9 +76,12 @@
 - Vergeben Sie einen Namen für den Key und fügen Sie den **öffentlichen** Schlüssel ihres SSH-Keys im unteren Feld ein und drücken Sie auf ``Add SSH key``
 
 > [!NOTE]
-> Der SSH-Key sollte vorher mit z.b. ``ssh-keygen`` (für Linux und MacOs) erstellt werden und nur für diesen Workshop genutzt werden.
-> **Beispiel:** ``ssh-keygen -t rsa -b 4096 -C "test-key"``
+> Der SSH-Key sollte vorher mit z.b. ``ssh-keygen`` (für Linux und MacOS) erstellt werden und nur für diesen Workshop genutzt werden.
+> **Beispiel:** ``ssh-keygen -t rsa -b 4096 -C "jump100"``
 > Mehr Infos zum generieren und nutzen von SSH-Keys in der offiziellen IBM Cloud Dokumentation -> [generieren und nutzen von SSH-Keys mit Power Virtual Servern](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-ssh-key)
+
+> [!NOTE]
+> Bitte senden Sie Ihren **Public Key** (z.B. jump100.pub) an den Workshop Leiter, damit der Key in Ihrem User auf dem JumpServer hinterlegt werden kann.
 
 <br/>
 <img src="_images/ssh-key_create.png" width="650">
@@ -126,10 +129,10 @@
 ----
 ### Schritt 5: auf die LPAR zugreifen 
 
-- Um auf der Instanz zu arbeiten könen Sie sich nach erfolgreicher Provisonierung zuerst mit dem in der Virtual Private Cloud (VPC) laufenden JumpServer per SSH verbinden ``ssh <Ihr_Username>@<IP_Jump_Server>`` 
+- Um auf der Instanz zu arbeiten, können Sie sich nach erfolgreicher Provisonierung zuerst mit dem in der Virtual Private Cloud (VPC) laufenden JumpServer per SSH verbinden ``ssh -i <Ihr_Private_Key> <Ihr_Username>@<IP_Jump_Server>`` Beispiel: ``ssh -i./.ssh/jump100 jump100@<IP_Jump_Server>`` 
 
 > [!NOTE]
-> Ihre Username / Passwort Kombination, sowie die IP-Adresse des JumpServers erhalten Sie vom Workshop-Leiter 
+> Der Workshop Leiter muss vorab den von Ihnen zuvor generierten public key im JumpServer in Ihrem user hinterlegen.
 
 - Sobald Sie sich am JumpServer angemeldet haben, können Sie Ihre Power Instanz per ping erreichen
 - Die IP Adresse Ihrer Instanz wurde innerhalb des von Ihnen angelegten Subnetztes beim Deployment automatisch vergeben

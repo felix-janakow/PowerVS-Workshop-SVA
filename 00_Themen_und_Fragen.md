@@ -27,3 +27,4 @@ Auf dieser Seite sind die Themen und Fragen des SVA Teams zu Power VS zusammenge
 | Q9   | Welche Um-Systeme braucht man zwingend bei einem RISE Vertrag? | Diskussion         | |
 | Q10  | Verdienstmöglichkeiten für SVA?                                | PDF                | [Verdienst](_materials/PowerVS_Verdienstmoeglichkeiten.pdf) |
 | Dok  | Ressourcen Links                                               | PDF                | [Links](_materials/PowerVS_Ressourcen.pdf) |
+| Dok  | Workshop HandsOn Umgebung Übersicht                            | drawio             | [File](_materials/2025-04-09_SVA-PVS-Workshop_HandsOn+Demo-Plan_v0.1.drawio)

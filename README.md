@@ -38,7 +38,9 @@ Zur Vorbereitung der Hands-on Übungen wurden folgende Schritte bereits durchgef
 
 - CLI lokal installieren
 - CLI im GUI der IBM Cloud
-- CLI commands 
+- CLI Basic Commands
+- Snapshot + Restore mit CLI
+- Volume klonen und an neue LPAR anhängen mit CLI
 
 
 

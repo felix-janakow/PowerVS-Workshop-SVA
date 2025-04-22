@@ -27,7 +27,7 @@
 
 <img src="_images/console_login.png" width="600">
 
-- Melden Sie sich mit Ihren Daten an um auf die LPAR zuzugreifen
+- Melden Sie sich mit dem User/Passwort, den Sie zum Abschluss der vorangegangenen Übung angelegt haben, an 
 
 ----
 ### Volume hinzufügen 

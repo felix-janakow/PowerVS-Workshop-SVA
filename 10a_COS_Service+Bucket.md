@@ -13,7 +13,7 @@
 
 <img src="_images/COS_Dashboard.png" width="750"/>
 
-- Standard Pricing Plan wählen, nach unten scrollen und ggfs. den Service Name und Resource Group ändern. Rechts Create klicken.
+- Standard Pricing Plan wählen, nach unten scrollen und ggfs. den Service Name und Resource Group ändern. Rechts ``Create`` klicken.
 <img src="_images/COS_Service1.png" width="750"/>
 
 - Die Service Instanz wird angezeigt, ein Bucket kann erstellt werden. Klick Create bucket:

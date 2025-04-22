@@ -21,7 +21,7 @@ Auf dieser Seite sind die Themen und Fragen des SVA Teams zu Power VS zusammenge
 | Q3   | Backup Konzepte kann man nutzen oder muss man selbst aufbauen? | PDF, Demo          | [DeepDive](_materials/2025-04-17_SVA-PVSWorkshop_DeepDive_v12.pdf) |
 | Q4   | Verfügbarkeiten auf welche Services?                           |                    | [Doku](https://www.ibm.com/support/customer/csol/terms/?ref=i126-9268-19-12-2024-zz-en), [PDF](_materials/IBM-Cloud_SLAs_i126-9268-19_12-2024_zz-en.pdf) |
 | Q5   | Remote Restart und LPM für Verfügbarkeiten                     | PDF                | [DeepDive](_materials/2025-04-17_SVA-PVS-Workshop_DeepDive_v12.pdf) |
-| Q6   | Oracle Lizenzierung in PowerVS                                 | PDF                | [Oracle]() |
+| Q6   | Oracle Lizenzierung in PowerVS                                 | PDF                | [Oracle](_materials/PowerVS_Oracle_Lizenzierung.pdf) |
 | Q7   | Unterstützung von CPU Pools oder Capped LPARs                  | PPT                | <a href="_materials/2025-04-17_SVA-PVS-Workshop_DeepDive_v12.pdf">DeepDive</a> |
 | Q8   | Zugriffskonzepte in die IBM Cloud                              | Demo               | |
 | Q9   | Welche Um-Systeme braucht man zwingend bei einem RISE Vertrag? | Diskussion         | |

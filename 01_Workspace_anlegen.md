@@ -136,6 +136,7 @@
 - Schauen Sie in der Liste der Instanzen oder in den Instanz-Details nach der IP Adresse (siehe [HandsOn Übung 2](02_LPAR_Management.md))
 - Damit Sie sich mit Ihrer LPAR per SSH verbinden können, müssen Sie zunächst Ihren **privaten** SSH Key auf den JumpServer übertragen; z.B. mit ``scp ~/.ssh/<workshop-private-ssk-key> <Ihr_Username>@<IP_Jump_Server>:/home/<Ihr Username>/.ssh/<workshop-private-ssk-key>``
 - Nun können Sie sich vom JumpServer per SSH mit Ihrer LPAR verbinden ``ssh -s <workshop-private-ssk-key> root@<IP_Ihrer_LPAR>``
+- Legen Sie zum Abschluss dieser Übung einen neuen Benutzer mit Passwort auf Ihrer Instanz an, den Sie in der nachfolgenden Übung zur Anmeldung an der Konsole verwenden können. 
 
 > [!NOTE]
 > Bitte nutzen Sie, wie oben beschrieben, einen dedizierten SSH-Key für diesen Workshop, keinen Key, den Sie auch an anderer Stelle verwenden!

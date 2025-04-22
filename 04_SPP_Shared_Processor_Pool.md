@@ -14,7 +14,7 @@
 <img src="_images/SPP-1.png" width="600">
 
 - Dem Pool einen eindeutigen Namen geben
-- Otional Tags eintragen
+- Optional Tags eintragen
 - Optional Pool einer placement group zuordnen
 - Mit ``Continue`` weiter gehen
 
@@ -24,7 +24,7 @@
 - Machine Type auswählen (s922, e980, s1022, e1080), für diese Übung wurde eine s1022 ausgewählt
 
 > [!NOTE]
-> Shared Processor Pools auf P9 Systemen haben eine fixe 1 EC : 1 VP Zuordnung. Auf P10 Systemen kann die Zurodnung auf bis zu 1 EC : 3 VP geändert werden, sofern die konfigurierten LPARs über max. 2 Cores verfügen
+> Shared Processor Pools auf P9 Systemen haben eine fixe 1 EC : 1 VP Zuordnung. Auf P10 Systemen kann die Zuordnung auf bis zu 1 EC : 3 VP geändert werden, sofern die konfigurierten LPARs über max. 2 Cores verfügen
 
 - Reserved Cores auswählen, für diese Übung wurden 4 Cores konfiguriert
 - Auf der rechten Seite wird der Preis für den SPP angezeigt (stundlich/monatlich). Dieser Preis fällt an, solange der Pool exisitert = Kapazitätsreservierung. Für CPUs der im Pool laufenden LPARs fallen keine (weiteren) Kosten an.
@@ -76,6 +76,7 @@
 - Core Types (außer Dedicated), Cores und RAM können so wie bereits bekannt konfiguriert werden.
 > [!NOTE]
 > Beachten Sie die Möglichkeit die Zahl der **Virtual Cores** zu ändern (1-3), sofern Sie nicht mehr als 2 Cores für die LPAR konfigurert haben. Probieren sie etwas herum!
+
 > [!NOTE]
 > Im Sinne der Übung ist es nicht notwendig eine LPAR im Pool anzulegen, da lediglich das Konfigurieren der Virtual Cores demonstriert werden sollte. Wenn Sie eine LPAR anlegen möchten, verfahren sie weiter mit Storage und Netzwerk wie in [Übung 01](01_Workspace_anlegen.md).
 

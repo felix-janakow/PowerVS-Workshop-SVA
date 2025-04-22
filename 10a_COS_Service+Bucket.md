@@ -19,12 +19,12 @@
 - Die Service Instanz wird angezeigt, ein Bucket kann erstellt werden. Klick ``Create bucket``:
 <img src="_images/COS_Service2.png" width="750"/>
 
-- Gewünschte Bucket Art auswählen und ``Create klicken`` - für das Lab z.B. Quickly get started (oder Create a Custom Bucket):
+- Gewünschte Bucket Art auswählen und ``Create`` klicken - für das Lab z.B. Quickly get started (oder Create a Custom Bucket):
   
 <img src="_images/COS_Create_bucket1.png" width="750"/>
 
 - Ggfs. Name des Buckets ändern, ``Next`` klicken, wenn gewünscht, können im nächsten Schritt gleich Dateien hochgeladen werden. 
-Wenn die Dateien später hochgeladen werden, auf Next klicken, die Bucket Configuration wird automatisch angezeigt. 
+Wenn die Dateien später hochgeladen werden, auf ``Next`` klicken, die Bucket Configuration wird automatisch angezeigt. 
 
 <img src="_images/COS_Create_bucket2.png" width="750"/>
 

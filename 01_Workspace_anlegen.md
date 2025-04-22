@@ -122,16 +122,22 @@
 
 
 - Die Provisionierung der Insanz kann jetzt einige Minuten in Anspruch nehmen
-- Um auf der Instanz zu arbeiten müssen Sie sich nach erfolgreicher Provisonierung zuerst mit dem in der Virtual Private Cloud (VPC) laufenden JumpServer per SSH verbinden ``ssh <Ihr_Username>@<IP_Jump_Server>`` 
+
+----
+### Schritt 5: auf die LPAR zugreifen 
+
+- Um auf der Instanz zu arbeiten könen Sie sich nach erfolgreicher Provisonierung zuerst mit dem in der Virtual Private Cloud (VPC) laufenden JumpServer per SSH verbinden ``ssh <Ihr_Username>@<IP_Jump_Server>`` 
 
 > [!NOTE]
 > Ihre Username / Passwort Kombination, sowie die IP-Adresse des JumpServers erhalten Sie vom Workshop-Leiter 
 
 - Sobald Sie sich am JumpServer angemeldet haben, können Sie Ihre Power Instanz per ping erreichen
 - Die IP Adresse Ihrer Instanz wurde innerhalb des von Ihnen angelegten Subnetztes beim Deployment automatisch vergeben
-- Schauen Sie in der Liste der Instanzen oder in den Instanz-Details nach der IP Adresse
+- Schauen Sie in der Liste der Instanzen oder in den Instanz-Details nach der IP Adresse (siehe [HandsOn Übung 2](02_LPAR_Management.md))
 - Damit Sie sich mit Ihrer LPAR per SSH verbinden können, müssen Sie zunächst Ihren **privaten** SSH Key auf den JumpServer übertragen; z.B. mit ``scp ~/.ssh/<workshop-private-ssk-key> <Ihr_Username>@<IP_Jump_Server>:/home/<Ihr Username>/.ssh/<workshop-private-ssk-key>``
 - Nun können Sie sich vom JumpServer per SSH mit Ihrer LPAR verbinden ``ssh -s <workshop-private-ssk-key> root@<IP_Ihrer_LPAR>``
 
 > [!NOTE]
 > Bitte nutzen Sie, wie oben beschrieben, einen dedizierten SSH-Key für diesen Workshop, keinen Key, den Sie auch an anderer Stelle verwenden!
+
+[Weiter zu Teil 02 LPAR Management](02_LPAR_Management.md)

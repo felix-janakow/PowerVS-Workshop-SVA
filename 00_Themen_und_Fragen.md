@@ -25,4 +25,4 @@ Auf dieser Seite sind die Themen und Fragen des SVA Teams zu Power VS zusammenge
 | Q7   | Unterstützung von CPU Pools oder Capped LPARs                  | PPT                | <a href="_materials/2025-04-17_SVA-PVS-Workshop_DeepDive_v12.pdf">DeepDive</a> |
 | Q8   | Zugriffskonzepte in die IBM Cloud                              | Demo               | |
 | Q9   | Welche Um-Systeme braucht man zwingend bei einem RISE Vertrag? | Diskussion         | |
-| Q10  | Verdienstmöglichkeiten für SVA?                                | PDF                | [Verdienst](_materials/PowerVS_Verdienstmöglichkeiten.pdf) |
+| Q10  | Verdienstmöglichkeiten für SVA?                                | PDF                | [Verdienst](_materials/PowerVS_Verdienstmoeglichkeiten.pdf) |

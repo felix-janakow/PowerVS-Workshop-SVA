@@ -42,9 +42,17 @@ Zur Vorbereitung der Hands-on Übungen wurden folgende Schritte bereits durchgef
 - Snapshot + Restore mit CLI
 - Volume klonen und an neue LPAR anhängen mit CLI
 
+### [04_SPP_Shared_Processor_Pool](04_SPP_Shared_Processor_Pool.md)
 
+- Shared Processor Pool anlegen
+- LPAR in Shared Processor Pool anlegen
 
+### [10a_COS_Service+Bucket](10a_COS_Service+Bucket.md)
 
+### [10b_Image_Import](10b_Image_Import.md)
+
+### [Mini_Cheat_Sheet](Mini_Cheat_Sheet.md)
+- CLI cheat sheet
 
 -----
 

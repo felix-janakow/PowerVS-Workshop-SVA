@@ -96,7 +96,7 @@
 
 <img src="_images/ibmcloud_pi_snap.png" width="850">
 
-- Um den Snapshot zu suchen und die ID des Snapshots herauszufinden nutzen Sie den Befehl ``ibmcloud snap ls``
+- Um den Snapshot zu suchen und die ID des Snapshots herauszufinden nutzen Sie den Befehl ``ibmcloud pi snap ls``
 
 <img src="_images/ibmcloud_snap_ls.png" width="850">
 

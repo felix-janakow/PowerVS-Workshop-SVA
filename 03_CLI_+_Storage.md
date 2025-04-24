@@ -66,7 +66,7 @@
 > ``ibmcloud plugin install power-iaas``
 
 - Vorhandene Workspaces auflisten: ``ibmcloud pi ws list``
-- Einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi target <CRN>``
+- Einen Workspaces als Target für folgende Befehle auswählen: ``ibmcloud pi ws target <CRN>``
     - Ihre CRN finden sie beim auflisten der Workspaces heraus
 
 ---
